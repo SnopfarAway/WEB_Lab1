@@ -11,6 +11,9 @@
       <li class="nav-item active">
         <a class="nav-link" href="ContactsPage.php">О Бренде</a>
       </li>
+      <li class="nav-item active">
+        <a class="nav-link" id ="lk" href="AuthorizationPage.php">Личный кабинет</a>
+      </li>
     </ul>
   </div>
 </nav>
