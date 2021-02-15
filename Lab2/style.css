@@ -1,0 +1,33 @@
+.form-signup {
+    display: block;
+    position: relative;
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 30px;
+    border: 1px solid #888;
+    width: 40%;
+    max-width: 960px;
+    border-radius: 6px;
+}
+
+.error-message {
+    display: block;
+    position: relative;
+    background-color: #d40c20de;
+    color: #ffffff;
+    padding: 10px;
+    max-width: 960px;
+    border-radius: 3px;
+    margin-top: 5px;
+}
+
+.succes-message {
+    display: block;
+    position: relative;
+    background-color: #0cd40cde ;
+    color: #ffffff;
+    padding: 10px;
+    max-width: 960px;
+    border-radius: 3px;
+    margin-top: 5px;
+}

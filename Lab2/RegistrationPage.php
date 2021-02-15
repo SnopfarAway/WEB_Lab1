@@ -1,5 +1,8 @@
 <?php
   session_start();
+  if(isset($_SESSION['userdata'])) {
+    header('Location: PersonalAccountPage.php');
+  }
 ?>
 <!DOCTYPE html>
 <html lang="ru">
@@ -8,22 +11,22 @@
   <body>
     <!-- Site's menu -->
     <?php require 'Templaytes/Header.php'; ?>
-    
+
     <div class="form-signup">
-      <form name="auth" method="POST">
-        <h3>Вход в личный кабинет</h3>
+      <form name="reg" method="POST">
+        <h3>Регистрация</h3>
         <p class="name">
           <input type="text" name="username" placeholder="Имя пользователя"></input>
         </p>
         <p class="password">
-          <input type="text" name="password" placeholder="Пароль"></input>
+          <input type="password" name="password" placeholder="Пароль"></input>
         </p>
         <p class="send">
           <input type="submit" value="Отправить"></input>
         </p>
-        <a href="RegistrationPage.php">Регистрация<br></a>
+        <a href="AuthorizationPage.php">Вернуться</a>
       </form>
-      <?php require 'Data/Authorization.php'; ?>
+      <?php require 'Data/Registration.php'; ?>
       <?php 
         if(isset($_SESSION['message'])) {
           echo $_SESSION['message'];

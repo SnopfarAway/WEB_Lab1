@@ -1,4 +1,3 @@
-<!-- Site's menu-->
 <nav class="navbar navbar-expand-sm navbar-light bg-light">
   <a class="navbar-brand" href="MainPage.php">КонфетОчка<span class="sr-only">(current)</span></a>
   <!-- Button to list of submenu-->
