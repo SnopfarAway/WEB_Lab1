@@ -6,4 +6,4 @@ if (mysqli_connect_errno()) {
     exit();
 }
 
-$mysqli->select_db("users");
+

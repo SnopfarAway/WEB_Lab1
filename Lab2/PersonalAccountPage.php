@@ -17,6 +17,8 @@
         echo "Твой пароль: ". $_SESSION['userdata'][$username] ." ";
         echo "<br>";
         echo "<a href='LogOut.php'>Выход</a>";
+        echo "<br>";
+        print_r($_SESSION['userdata']);
       } else{
         //http_response_code(403);
         //die('Forbidden');
@@ -33,7 +35,7 @@
         </body></html>";
         exit;
       }
-      
+
     ?>
     <?php require 'Templaytes/Footer.php'; ?>
   </body>

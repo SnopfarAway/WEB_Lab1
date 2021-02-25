@@ -1,5 +1,5 @@
 <nav class="navbar navbar-expand-sm navbar-light bg-light">
-  <a class="navbar-brand" href="MainPage.php">КонфетОчка<span class="sr-only">(current)</span></a>
+  <a class="navbar-brand" href="MainPage.php">КонфетОчка</a>
   <!-- Button to list of submenu-->
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>

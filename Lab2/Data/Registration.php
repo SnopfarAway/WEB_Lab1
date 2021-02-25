@@ -13,6 +13,7 @@
     $username = $_POST['username'];
     $password = $_POST['password'];
     require_once 'DataBase.php';
+    $mysqli->select_db("users");
 
     $query = "INSERT INTO users (username, password) VALUES('$username', '$password')";
     $result = mysqli_query($mysqli, $query);

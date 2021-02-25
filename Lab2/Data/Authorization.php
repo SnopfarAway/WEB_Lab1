@@ -9,6 +9,7 @@
         $username = $_POST['username'];
         $password = $_POST['password'];
         require_once 'DataBase.php';
+        $mysqli->select_db("users");
 
         $query1 = "SELECT * FROM users WHERE username='$username'";
         $query1_result = mysqli_query($mysqli, $query1) or die(mysqli_error($mysqli));
@@ -38,7 +39,7 @@
     if(isset($_SESSION['userdata'])){
         //echo'<pre>'. print_r($query2_rows_count) .'</pre>';
         ob_start();
-        $new_url = 'http://localhost/WEB_Lab1/Lab2/PersonalAccountPage.php';
+        $new_url = 'PersonalAccountPage.php';
         header('Location: '.$new_url);
         ob_end_flush();
     }
