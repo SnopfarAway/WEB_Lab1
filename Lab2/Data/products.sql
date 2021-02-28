@@ -3,9 +3,9 @@
 -- https://www.phpmyadmin.net/
 --
 -- Хост: 127.0.0.1
--- Время создания: Фев 25 2021 г., 16:21
+-- Время создания: Фев 28 2021 г., 15:46
 -- Версия сервера: 10.4.17-MariaDB
--- Версия PHP: 8.0.1
+-- Версия PHP: 8.0.2
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -55,41 +55,23 @@ INSERT INTO `products` (`id`, `title`, `cost`, `image`, `page_name`) VALUES
 (13, 'КонфетОчка №13', 98, 'candy.png', 'ProductPage_3.php'),
 (14, 'КонфетОчка №14', 77, 'candy.png', 'ProductPage_4.php'),
 (15, 'КонфетОчка №15', 105, 'candy.png', 'ProductPage_5.php'),
-(16, 'КонфетОчка №16', 110, 'candy.png', 'ProductPage_1.php');
-
--- --------------------------------------------------------
-
---
--- Структура таблицы `users`
---
-
-CREATE TABLE `users` (
-  `id` int(11) NOT NULL,
-  `username` varchar(255) DEFAULT NULL,
-  `password` varchar(255) DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
-
---
--- Дамп данных таблицы `users`
---
-
-INSERT INTO `users` (`id`, `username`, `password`) VALUES
-(21, '44343', '34343'),
-(24, '777', '777'),
-(27, 'mao_99', ''),
-(28, '4343434', '4343434'),
-(29, '43434343443433433', 'arteml'),
-(38, '545454', '4545454'),
-(39, 'artem', 'artem'),
-(42, 'Vika', '12345'),
-(47, 'vika2', '12345'),
-(50, '2323232323', '45252523424242'),
-(60, 'artem123', '123'),
-(63, 'Vaka123', '123'),
-(64, 'Vassa123', '123'),
-(65, 'arch123', '123'),
-(66, 'Artem99', '1234'),
-(68, 'Artem999', '1234');
+(16, 'КонфетОчка №16', 110, 'candy.png', 'ProductPage_1.php'),
+(17, 'КонфетОчка №17', 120, 'candy.png', 'ProductPage_1.php'),
+(18, 'КонфетОчка №18', 105, 'candy.png', 'ProductPage_2.php'),
+(19, 'КонфетОчка №19', 110, 'candy.png', 'ProductPage_3.php'),
+(20, 'КонфетОчка №20', 90, 'candy.png', 'ProductPage_4.php'),
+(21, 'КонфетОчка №21', 120, 'candy.png', 'ProductPage_5.php'),
+(22, 'КонфетОчка №22', 134, 'candy.png', 'ProductPage_1.php'),
+(23, 'КонфетОчка №23', 160, 'candy.png', 'ProductPage_2.php'),
+(24, 'КонфетОчка №24', 156, 'candy.png', 'ProductPage_3.php'),
+(25, 'КонфетОчка №25', 75, 'candy.png', 'ProductPage_4.php'),
+(26, 'КонфетОчка №26', 89, 'candy.png', 'ProductPage_5.php'),
+(27, 'КонфетОчка №27', 93, 'candy.png', 'ProductPage_1.php'),
+(28, 'КонфетОчка №28', 200, 'candy.png', 'ProductPage_2.php'),
+(29, 'КонфетОчка №29', 98, 'candy.png', 'ProductPage_3.php'),
+(30, 'КонфетОчка №30', 77, 'candy.png', 'ProductPage_4.php'),
+(31, 'КонфетОчка №31', 105, 'candy.png', 'ProductPage_5.php'),
+(32, 'КонфетОчка №32', 110, 'candy.png', 'ProductPage_1.php');
 
 --
 -- Индексы сохранённых таблиц
@@ -102,13 +84,6 @@ ALTER TABLE `products`
   ADD PRIMARY KEY (`id`);
 
 --
--- Индексы таблицы `users`
---
-ALTER TABLE `users`
-  ADD PRIMARY KEY (`id`),
-  ADD UNIQUE KEY `username` (`username`);
-
---
 -- AUTO_INCREMENT для сохранённых таблиц
 --
 
@@ -116,13 +91,7 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT для таблицы `products`
 --
 ALTER TABLE `products`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=17;
-
---
--- AUTO_INCREMENT для таблицы `users`
---
-ALTER TABLE `users`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=72;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=33;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
