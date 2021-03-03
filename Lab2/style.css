@@ -1,5 +1,8 @@
-.form-signup {
+body {
     display: block;
+}
+
+.form-signup {
     position: relative;
     background-color: #fefefe;
     margin: 15% auto;
@@ -11,7 +14,6 @@
 }
 
 .error-message {
-    display: block;
     position: relative;
     background-color: #d40c20de;
     color: #ffffff;
@@ -22,7 +24,6 @@
 }
 
 .succes-message {
-    display: block;
     position: relative;
     background-color: #0cd40cde ;
     color: #ffffff;
@@ -31,4 +32,3 @@
     border-radius: 3px;
     margin-top: 5px;
 }
-

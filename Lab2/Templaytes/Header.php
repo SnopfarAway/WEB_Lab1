@@ -13,6 +13,9 @@
       <li class="nav-item active">
         <a class="nav-link" id ="lk" href="/WEB_Lab1/Lab2/AuthorizationPage.php">Личный кабинет</a>
       </li>
+      <li class="nav-item active">
+        <a class="nav-link" id ="lk" href="/WEB_Lab1/Lab2/ReviewsPage.php">Оставить отзыв</a>
+      </li>
     </ul>
   </div>
 </nav>

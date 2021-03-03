@@ -32,7 +32,7 @@
             <div class="card-body">
                 <h5 class="card-title"><?=$product['title']?></h5>
                 <p class="card-text"><?=$product['cost']?> р</p>
-                <a href="<?=$product['page_name']?>" class="btn btn-info">На страницу продукта</a>
+                <a href="/WEB_Lab1/Lab2/<?=$product['page_name']?>" class="btn btn-info">На страницу продукта</a>
             </div>
         </div>
     </div>
